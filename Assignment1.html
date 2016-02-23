@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="angular.js"></script>
+
+    <style>
+        table{
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        } 
+        table tr:nth-child(odd) {
+          background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <label>Street</label>
+        <input type="text" ng-model="street" />
+        <label>City</label>
+        <input type="text" ng-model="city" />
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        <table >
+            <tbody>
+                <tr>
+                    <td>Street</td>
+                    <td>City</td>
+                </tr>
+                <tr>
+                    <td>{{street}}</td>
+                    <td>{{city}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+
+</body>
+</html>
